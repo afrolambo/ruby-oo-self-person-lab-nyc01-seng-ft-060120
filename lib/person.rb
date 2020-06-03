@@ -12,6 +12,8 @@ class Person
   @hygiene = 8 
   end 
   
+  
+  
   private 
   
   def name=(name) 
