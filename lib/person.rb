@@ -15,13 +15,11 @@ class Person
   def clean?
     @hygiene > 7 ?
       true : false 
-    end 
   end 
   
   def happy?
     @happiness > 7?
       true : false 
-    end 
   end 
     
 
