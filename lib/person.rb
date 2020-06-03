@@ -32,6 +32,6 @@ class Person
   def name=(name) 
     @name = name 
   end 
-
+# bob = Person.new("Bob")
 end 
 binding.pry
