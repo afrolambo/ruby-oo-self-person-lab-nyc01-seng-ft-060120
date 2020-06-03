@@ -12,7 +12,10 @@ class Person
   @hygiene = 8 
   end 
   
-  
+  def clean?
+    if hygiene > 7? 
+      true : false
+  end 
   
   private 
   
