@@ -5,7 +5,7 @@ class Person
   
   attr_accessor :name, :bank, :happiness, :hygiene
   
-  def initialize
+  def initialize(name)
   @name = name 
   @bank = 25 
   @happiness = 8 
