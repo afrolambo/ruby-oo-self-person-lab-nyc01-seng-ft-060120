@@ -2,7 +2,7 @@
 require 'pry'
 class Person 
   @@all = [] 
-
+  
   attr_accessor :name, :bank, :happiness, :hygiene
   
   def initialize(name)
@@ -12,12 +12,6 @@ class Person
   @hygiene = 8 
   end 
   
-  def happiness(happiness = 8)
-    @happiness 
-    if @happiness > 10 
-      @happiness = 10 
-    end 
-  end 
   def clean?
     hygiene > 7? 
       true : false
@@ -47,11 +41,16 @@ class Person
     @happiness += 2 
     @hygiene -= 3
     puts "♪ another one bites the dust ♫"
+    if @happiness > 10 
+      @happiness = 10 
+    end 
     @happiness
   end 
   
   def call_friend(friend)
-    @happiness += 3 && friend.happiness += 3
+    self.happiness && friend.happiness += 3
+      @happiness > 10? 
+        @happiness = 10 : @happiness = @happiness
     puts "Hello #{friend.name}! It's #{self.name}. How are you?"
   end 
   private 
