@@ -47,16 +47,11 @@ class Person
     @happiness += 2 
     @hygiene -= 3
     puts "♪ another one bites the dust ♫"
-    if @happiness > 10 
-      @happiness = 10 
-    end 
     @happiness
   end 
   
   def call_friend(friend)
     @happiness += 3
-      if @happiness > 10 
-        @happiness = 10 
       end 
     puts "Hello #{friend.name}! It's #{self.name}. How are you?"
   end 
