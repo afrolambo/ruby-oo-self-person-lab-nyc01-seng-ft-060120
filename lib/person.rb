@@ -11,6 +11,17 @@ class Person
   @happiness = 8 
   @hygiene = 8 
   end 
+  
+  def clean?
+    if @hygiene > 7 ?
+      true : false 
+    end 
+  end 
+  
+  def happy?
+    if @happiness > 7?
+      true : false 
+    
 
 end 
 binding.pry
