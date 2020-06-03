@@ -36,6 +36,12 @@ class Person
     end 
     @hygiene
   end 
+  
+  def work_out  
+    @happiness += 2 
+    @hygiene -= 3
+    
+  end 
   private 
   
   def name=(name) 
