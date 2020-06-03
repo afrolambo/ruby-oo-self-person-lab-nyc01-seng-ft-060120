@@ -33,7 +33,9 @@ class Person
     puts "♪ Rub-a-dub just relaxing in the tub ♫"
     if @hygiene > 10 
       @hygiene = 10
-    
+    end 
+    @hygiene
+  end 
   private 
   
   def name=(name) 
