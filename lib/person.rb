@@ -51,6 +51,8 @@ class Person
     self.happiness && friend.happiness += 3
       @happiness > 10? 
         @happiness = 10 : @happiness = @happiness
+      friend.happiness > 10?
+      friend.happiness = 10 : friend.happiness = friend.happiness 
     puts "Hello #{friend.name}! It's #{self.name}. How are you?"
   end 
   private 
