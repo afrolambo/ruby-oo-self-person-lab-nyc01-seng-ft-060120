@@ -2,7 +2,7 @@
 require 'pry'
 class Person 
   @@all = [] 
-  
+
   attr_accessor :name, :bank, :happiness, :hygiene
   
   def initialize(name)
@@ -12,6 +12,12 @@ class Person
   @hygiene = 8 
   end 
   
+  def happiness
+    @happiness 
+    if @happiness > 10 
+      @happiness = 10 
+    end 
+  end 
   def clean?
     hygiene > 7? 
       true : false
