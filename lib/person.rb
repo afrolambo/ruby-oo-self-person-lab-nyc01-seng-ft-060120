@@ -12,12 +12,12 @@ class Person
   @hygiene = 8 
   end 
   
-  def clean?
+  def clean?(name)
     @hygiene > 7 ?
       true : false 
   end 
   
-  def happy?
+  def happy?(name)
     @happiness > 7?
       true : false 
   end 
