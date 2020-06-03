@@ -48,7 +48,7 @@ class Person
   end 
   
   def call_friend(friend)
-    puts "Hello #{friend}! It's #{self.name}. How are you?"
+    puts "Hello #{friend.name}! It's #{self.name}. How are you?"
   end 
   private 
   
