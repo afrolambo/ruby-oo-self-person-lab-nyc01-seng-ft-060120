@@ -51,7 +51,7 @@ class Person
   end 
   
   def call_friend(friend)
-    @happiness += 3
+    @happiness += 3 && friend.happiness += 3
       end 
     puts "Hello #{friend.name}! It's #{self.name}. How are you?"
   end 
