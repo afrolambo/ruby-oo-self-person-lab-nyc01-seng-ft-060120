@@ -13,14 +13,16 @@ class Person
   end 
   
   def clean?
-    if @hygiene > 7 ?
+    @hygiene > 7 ?
       true : false 
     end 
   end 
   
   def happy?
-    if @happiness > 7?
+    @happiness > 7?
       true : false 
+    end 
+  end 
     
 
 end 
