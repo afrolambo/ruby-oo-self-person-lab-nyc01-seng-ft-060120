@@ -28,6 +28,12 @@ class Person
     @bank
   end 
   
+  def take_bath
+    @hygiene += 4 
+    puts "♪ Rub-a-dub just relaxing in the tub ♫"
+    if @hygiene > 10 
+      @hygiene = 10
+    
   private 
   
   def name=(name) 
