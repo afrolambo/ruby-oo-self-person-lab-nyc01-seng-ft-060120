@@ -25,6 +25,7 @@ class Person
   def get_paid(salary)
     @bank += salary 
     puts "all about the benjamins"
+    @bank
   end 
   
   private 
