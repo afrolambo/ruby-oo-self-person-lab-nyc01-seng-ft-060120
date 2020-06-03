@@ -15,6 +15,7 @@ class Person
   def clean?
     if hygiene > 7? 
       true : false
+    end 
   end 
   
   private 
