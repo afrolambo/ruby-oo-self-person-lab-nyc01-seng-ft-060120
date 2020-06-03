@@ -48,6 +48,10 @@ class Person
   end 
   
   def call_friend(friend)
+    self.happiness && friend.happiness += 3
+      if @happiness > 10 
+        @happiness = 10 
+      end 
     puts "Hello #{friend.name}! It's #{self.name}. How are you?"
   end 
   private 
