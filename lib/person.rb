@@ -40,7 +40,11 @@ class Person
   def work_out  
     @happiness += 2 
     @hygiene -= 3
-    
+    puts "♪ another one bites the dust ♫"
+    if @happiness > 10 
+      @happiness = 10 
+    end 
+    @happiness
   end 
   private 
   
