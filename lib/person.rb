@@ -47,6 +47,8 @@ class Person
     @happiness
   end 
   
+  def call_friend(friend)
+    
   private 
   
   def name=(name) 
