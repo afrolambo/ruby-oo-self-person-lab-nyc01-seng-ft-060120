@@ -46,6 +46,7 @@ class Person
     end 
     @happiness
   end 
+  
   private 
   
   def name=(name) 
