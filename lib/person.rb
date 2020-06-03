@@ -12,7 +12,7 @@ class Person
   @hygiene = 8 
   end 
   
-  def happiness
+  def happiness(happiness = 8)
     @happiness 
     if @happiness > 10 
       @happiness = 10 
