@@ -5,7 +5,9 @@ class Person
   attr_accessor :name 
   
   def initialize
-  
+  @name = name 
+  @bank = 25 
+  @happiness = 8 
   end 
 
 end 
