@@ -49,6 +49,7 @@ class Person
   
   def call_friend(friend)
     puts "Hello #{friend}! It's #{Person.name}. How are you?"
+  end 
   private 
   
   def name=(name) 
