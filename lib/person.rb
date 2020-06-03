@@ -17,6 +17,16 @@ class Person
       true : false
   end 
   
+  def happy?
+    happiness > 7? 
+      true : false
+  end 
+  
+  def get_paid(salary)
+    @bank += salary 
+    puts "all about the benjamins"
+  end 
+  
   private 
   
   def name=(name) 
