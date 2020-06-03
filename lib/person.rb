@@ -12,7 +12,8 @@ class Person
   @hygiene = 8 
   end 
   
-  Private 
+  private 
+  
   def name=(name) 
     @name = name 
   end 
