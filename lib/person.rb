@@ -55,6 +55,9 @@ class Person
     friend.happiness += 3
     puts "Hello #{friend.name}! It's #{self.name}. How are you?"
   end 
+  
+  def start_conversation
+  
   private 
   
   def name=(name) 
