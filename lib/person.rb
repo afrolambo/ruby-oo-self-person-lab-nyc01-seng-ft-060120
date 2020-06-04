@@ -3,7 +3,8 @@ require 'pry'
 class Person 
   @@all = [] 
   
-  attr_accessor :name, :bank, :happiness, :hygiene
+  attr_accessor :bank
+  attr_reader :name, :happiness, :hygiene
   
   def initialize(name)
   @name = name 
