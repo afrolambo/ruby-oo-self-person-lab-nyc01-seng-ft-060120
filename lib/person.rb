@@ -57,7 +57,9 @@ class Person
   
   def start_conversation(person, topic)
     object = [self, person] 
-  if topic == 
+  if topic == "politics"
+    object.each {|o| o.happiness -= 2}
+    
   puts "blah blah blah blah blah"
   end 
   private 
