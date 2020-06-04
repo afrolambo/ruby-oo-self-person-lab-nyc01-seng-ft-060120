@@ -64,7 +64,7 @@ class Person
     first, second = ["sun","rain"]
     end 
   first, second = ["blah", "blah"]
-  puts "blah blah #{first} blah #{second}"
+  "blah blah #{first} blah #{second}"
   end 
   
   private 
