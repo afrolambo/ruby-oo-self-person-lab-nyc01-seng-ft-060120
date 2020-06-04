@@ -55,17 +55,16 @@ class Person
   end 
   
   def start_conversation(person, topic)
-      object = [self, person] 
-    if topic == "politics"
-      object.each {|o| o.happiness -= 2}
-      first, second = ["partisan", "lobbyist"]
-    else topic == "weather"
-      object.each {|o| o.happiness += 1} 
-      first, second = ["sun","rain"]
+    object = [self, person] 
+  if topic == "politics"
+    object.each {|o| o.happiness -= 2}
+    first, second = ["partison", "lobbyist"]
+  else topic == "weather"
+    object.each {|o| o.happiness += 1} 
+    first, second = ["sun","rain"]
     end 
-    first ||= "blah"
-    second ||= "blah"
-    base_string = "blah blah #{first} blah #{second}"
+  first, second ||= ["blah", "blah"]
+  "blah blah #{first} blah #{second}"
   end 
   
   private 
