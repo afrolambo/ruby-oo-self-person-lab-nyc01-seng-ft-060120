@@ -48,7 +48,8 @@ class Person
   end 
   
   def call_friend(friend)
-    self.happiness && friend.happiness += 3
+    @happiness += 3 
+    friend.happiness += 3
       @happiness > 10? 
         @happiness = 10 : @happiness = @happiness
       friend.happiness > 10?
