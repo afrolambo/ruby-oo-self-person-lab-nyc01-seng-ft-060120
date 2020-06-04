@@ -63,8 +63,9 @@ class Person
     object.each {|o| o.happiness += 1} 
     first, second = ["sun","rain"]
     end 
-  first, second ||= ["blah", "blah"]
-  "blah blah #{first} blah #{second}"
+    first ||= "blah"
+    second ||= "blah"
+    base_string = "blah blah #{first} blah #{second}"
   end 
   
   private 
