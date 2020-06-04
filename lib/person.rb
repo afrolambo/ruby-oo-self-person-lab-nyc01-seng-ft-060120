@@ -51,8 +51,7 @@ class Person
   end 
   
   def call_friend(friend)
-    @happiness += 3 
-    friend.happiness += 3
+    [self, friend].each {|smile| @happiness += 3 
     puts "Hello #{friend.name}! It's #{self.name}. How are you?"
   end 
   
