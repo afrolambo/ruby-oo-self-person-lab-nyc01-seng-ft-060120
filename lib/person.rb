@@ -35,7 +35,7 @@ class Person
   
   def get_paid(salary)
     self.bank_account += salary 
-    puts "all about the benjamins"
+    "all about the benjamins"
   end 
   
   def take_bath
