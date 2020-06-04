@@ -65,7 +65,7 @@ class Person
     first, second = ["sun","rain"]
     end 
   first, second = ["blah", "blah"]
-  base 
+  
   
   puts "blah blah blah blah blah"
   end 
