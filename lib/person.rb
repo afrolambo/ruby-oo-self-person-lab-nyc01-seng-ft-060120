@@ -51,7 +51,7 @@ class Person
   
   def call_friend(friend)
     [self, friend].each {|c| c.happiness += 3}
-    puts "Hello #{friend.name}! It's #{self.name}. How are you?"
+    "Hello #{friend.name}! It's #{self.name}. How are you?"
   end 
   
   def start_conversation(person, topic)
