@@ -64,7 +64,8 @@ class Person
     object.each {|o| o.happiness += 1} 
     first, second = ["sun","rain"]
     end 
-  
+  first, second = ["blah", "blah"]
+  base 
   
   puts "blah blah blah blah blah"
   end 
