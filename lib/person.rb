@@ -8,7 +8,7 @@ class Person
   
   def initialize(name)
   @name = name 
-  @bank = 25 
+  @bank_account = 25 
   @happiness = 8 
   @hygiene = 8 
   end 
@@ -34,9 +34,8 @@ class Person
   end 
   
   def get_paid(salary)
-    self.bank += salary 
+    self.bank_account += salary 
     puts "all about the benjamins"
-    @bank
   end 
   
   def take_bath
