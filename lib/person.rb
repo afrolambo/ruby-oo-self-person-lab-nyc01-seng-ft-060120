@@ -56,6 +56,7 @@ class Person
   end 
   
   def start_conversation(person, topic)
+    object 
   if topic == 
   puts "blah blah blah blah blah"
   end 
