@@ -13,6 +13,18 @@ class Person
   @hygiene = 8 
   end 
   
+  def happiness=(num)
+    @happiness = num
+    @happiness = 10 if @happiness > 10
+    @happiness = 0 if @happiness < 0
+  end
+
+  def hygiene=(num)
+    @hygiene = num
+    @hygiene = 10 if @hygiene > 10
+    @hygiene = 0 if @hygiene < 0
+  end
+  
   def clean?
     hygiene > 7? 
       true : false
@@ -32,9 +44,6 @@ class Person
   def take_bath
     @hygiene += 4 
     puts "♪ Rub-a-dub just relaxing in the tub ♫"
-    if @hygiene > 10 
-      @hygiene = 10
-    end 
     @hygiene
   end 
   
@@ -42,19 +51,12 @@ class Person
     @happiness += 2 
     @hygiene -= 3
     puts "♪ another one bites the dust ♫"
-    if @happiness > 10 
-      @happiness = 10 
-    end 
     @happiness
   end 
   
   def call_friend(friend)
     @happiness += 3 
     friend.happiness += 3
-      @happiness > 10? 
-        @happiness = 10 : @happiness = @happiness
-      friend.happiness > 10?
-        friend.happiness = 10 : friend.happiness = friend.happiness 
     puts "Hello #{friend.name}! It's #{self.name}. How are you?"
   end 
   private 
