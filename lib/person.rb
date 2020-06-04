@@ -59,7 +59,10 @@ class Person
     object = [self, person] 
   if topic == "politics"
     object.each {|o| o.happiness -= 2}
-    first, second = ()
+    first, second = ["partison", "lobbyist"]
+  else topic == "weather"
+    object.each {|o| o.happiness += 1} 
+    first, second = ["sun","rain"]
   puts "blah blah blah blah blah"
   end 
   private 
