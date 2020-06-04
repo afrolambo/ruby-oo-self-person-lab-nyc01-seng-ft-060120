@@ -42,14 +42,12 @@ class Person
   def take_bath
     @hygiene += 4 
     puts "♪ Rub-a-dub just relaxing in the tub ♫"
-    @hygiene
   end 
   
   def work_out  
     @happiness += 2 
     @hygiene -= 3
     puts "♪ another one bites the dust ♫"
-    @happiness
   end 
   
   def call_friend(friend)
