@@ -51,12 +51,14 @@ class Person
   end 
   
   def call_friend(friend)
-    [self, friend].each {|smile| @happiness += 3 
+    [self, friend].each {|c| c.@happiness += 3}
     puts "Hello #{friend.name}! It's #{self.name}. How are you?"
   end 
   
-  def start_conversation
-  
+  def start_conversation(person, topic)
+  if topic == 
+  puts "blah blah blah blah blah"
+  end 
   private 
   
   def name=(name) 
