@@ -63,8 +63,12 @@ class Person
   else topic == "weather"
     object.each {|o| o.happiness += 1} 
     first, second = ["sun","rain"]
+    end 
+  
+  
   puts "blah blah blah blah blah"
   end 
+  
   private 
   
   def name=(name) 
