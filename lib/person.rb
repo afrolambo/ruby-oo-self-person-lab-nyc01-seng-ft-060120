@@ -40,7 +40,7 @@ class Person
   
   def take_bath
     @hygiene += 4 
-    puts "♪ Rub-a-dub just relaxing in the tub ♫"
+    "♪ Rub-a-dub just relaxing in the tub ♫"
   end 
   
   def work_out  
