@@ -75,4 +75,3 @@ class Person
   end 
 # bob = Person.new("Bob")
 end 
-binding.pry
