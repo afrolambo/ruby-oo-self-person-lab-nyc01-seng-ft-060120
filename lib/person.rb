@@ -59,7 +59,7 @@ class Person
     object = [self, person] 
   if topic == "politics"
     object.each {|o| o.happiness -= 2}
-    
+    first, second = ()
   puts "blah blah blah blah blah"
   end 
   private 
